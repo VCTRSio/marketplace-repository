@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "keys": [
+    { "publisher": "VCTRS", "keyId": "vctrs-ed25519-2026", "algo": "ed25519",
+      "publicKey": "xwrZM4oG+MTlm5a2CVi3DEkE3zl1ctsHGA9j5kDuluw=", "url": "https://vctrs.io", "addedAt": "2026-07-08" },
+    { "publisher": "Carmelo Santana", "keyId": "carmelo-ed25519-2026", "algo": "ed25519",
+      "publicKey": "TkYT7nAWeqrHMXxt5Ekwb/PsQg8RexMwkZyy/pT64Ec=", "url": "https://github.com/carmelosantana", "addedAt": "2026-07-08" }
+  ],
+  "revocations": []
+}

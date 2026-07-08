@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/schema/manifest.schema.json",
+  "title": "VCTRbase Marketplace Plugin Manifest",
+  "description": "Superset schema for a catalog plugin manifest published to the VCTRbase marketplace. Enforced at review time by tools/validate.php and CI.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["slug", "name", "version", "uiMode", "engines", "artifact"],
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Unique catalog slug; must match the plugins/<slug>/ directory name."
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?(?:\\+[0-9A-Za-z.-]+)?$",
+      "description": "Semantic version (semver)."
+    },
+    "uiMode": {
+      "type": "string",
+      "enum": ["declarative", "native", "hybrid"]
+    },
+    "engines": {
+      "type": "object",
+      "required": ["vctrbase"],
+      "properties": {
+        "vctrbase": { "type": "string" }
+      }
+    },
+    "category": { "type": "string" },
+    "description": { "type": "string" },
+    "longDescription": { "type": "string" },
+    "author": { "type": "string" },
+    "icon": { "type": "string" },
+    "visibility": { "type": "string", "enum": ["public", "unlisted", "private"] },
+    "featured": { "type": "boolean" },
+    "screenshots": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" }
+    },
+    "links": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "homepage": { "type": "string", "format": "uri" },
+        "repository": { "type": "string", "format": "uri" },
+        "documentation": { "type": "string", "format": "uri" },
+        "support": { "type": "string", "format": "uri" }
+      }
+    },
+    "permissions": { "type": "array", "items": { "type": "string" } },
+    "capabilities": { "type": "array", "items": { "type": "string" } },
+    "provider": {
+      "type": "string",
+      "description": "Trusted-publisher identifier. When present, the artifact MUST be signed (signature + keyId)."
+    },
+    "artifact": {
+      "type": "object",
+      "required": ["url", "digest"],
+      "properties": {
+        "url": { "type": "string", "format": "uri" },
+        "digest": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "description": "Lowercase sha256 hex digest of the artifact ZIP bytes."
+        },
+        "signature": {
+          "type": "string",
+          "description": "Base64-encoded detached Ed25519 signature over the raw artifact ZIP bytes."
+        },
+        "keyId": {
+          "type": "string",
+          "description": "Trusted-keys keyId whose public key verifies the signature."
+        }
+      }
+    }
+  },
+  "if": { "required": ["provider"] },
+  "then": {
+    "properties": {
+      "artifact": { "required": ["url", "digest", "signature", "keyId"] }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+.plugin-signing-keys/
+*.privkey.b64
+*.keypair.json
