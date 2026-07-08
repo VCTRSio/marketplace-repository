@@ -1,0 +1,16 @@
+{
+    "slug": "signed-ok",
+    "name": "Fixture",
+    "version": "1.0.0",
+    "uiMode": "hybrid",
+    "engines": {
+        "vctrbase": ">=1.0.0"
+    },
+    "provider": "Carmelo Santana",
+    "artifact": {
+        "url": "https://example.com/artifacts/signed-ok.zip",
+        "digest": "b16f879e8f81344960c0c122d69745da94b230044380ab0e1b65924b73ff55ed",
+        "signature": "Fzu0ME0LduSOCRgZCmDFoKjpogsX8e/bq38Fn8qIWAUyd8xY4ItV5aXKRmViltPAeHV1tNgo9Xr9FHmnJiM9AQ==",
+        "keyId": "carmelo-ed25519-2026"
+    }
+}

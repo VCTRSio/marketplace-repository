@@ -1,0 +1,14 @@
+{
+    "slug": "unsigned-provider",
+    "name": "Fixture",
+    "version": "1.0.0",
+    "uiMode": "native",
+    "engines": {
+        "vctrbase": ">=1.0.0"
+    },
+    "provider": "Carmelo Santana",
+    "artifact": {
+        "url": "https://example.com/artifacts/unsigned-provider.zip",
+        "digest": "b91d7b60359a42f43734ad76da7ef30c7397ccc009eccfee233a75e39a9e72ac"
+    }
+}
