@@ -1,0 +1,16 @@
+{
+  "slug": "provider-no-uimode",
+  "name": "Provider Without uiMode",
+  "version": "1.0.0",
+  "description": "A first-party PHP provider plugin that omits uiMode (the in-tree convention). Must pass validation — server-code plugins do not declare a UI mode.",
+  "author": "Test",
+  "visibility": "first_party",
+  "engines": { "vctrbase": "^1.0.0" },
+  "provider": "Vctrs\\Plugins\\ProviderNoUimode\\ProviderNoUimodeServiceProvider",
+  "artifact": {
+    "url": "https://github.com/example/provider-no-uimode/releases/download/v1.0.0/provider-no-uimode-1.0.0.zip",
+    "digest": "0000000000000000000000000000000000000000000000000000000000000000",
+    "signature": "c2lnbmF0dXJlLXBsYWNlaG9sZGVy",
+    "keyId": "carmelo-ed25519-2026"
+  }
+}

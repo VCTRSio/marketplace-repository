@@ -83,8 +83,11 @@ foreach ($dirs as $dir) {
         continue;
     }
 
-    // (1) schema: required top-level keys
-    foreach (['slug', 'name', 'version', 'uiMode', 'engines', 'artifact'] as $req) {
+    // (1) schema: required top-level keys.
+    // uiMode is OPTIONAL: first-party PHP provider plugins (channels, partner-hub,
+    // Prana Buzz, …) omit it — matching the runtime manifest contract. When present it
+    // is still enum-checked below.
+    foreach (['slug', 'name', 'version', 'engines', 'artifact'] as $req) {
         if (!array_key_exists($req, $m)) {
             $errors[] = "missing required key '$req'";
         }

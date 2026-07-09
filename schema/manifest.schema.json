@@ -5,7 +5,7 @@
   "description": "Superset schema for a catalog plugin manifest published to the VCTRbase marketplace. Enforced at review time by tools/validate.php and CI.",
   "type": "object",
   "additionalProperties": true,
-  "required": ["slug", "name", "version", "uiMode", "engines", "artifact"],
+  "required": ["slug", "name", "version", "engines", "artifact"],
   "properties": {
     "slug": {
       "type": "string",
