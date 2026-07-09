@@ -172,7 +172,22 @@ foreach ($dirs as $dir) {
             }
         }
     } else {
-        // declarative: no signature required. Verify digest if artifact is present locally.
+        // declarative (§2.3): a community plugin has url+digest and NO signature/keyId.
+        // Reject any declarative manifest that nonetheless carries artifact.keyId or
+        // artifact.signature — otherwise a manifest could name a trusted keyId with no
+        // valid signature and the app would render a false "Verified · by …" badge
+        // pre-install. Forbidding these at the source guarantees a declarative plugin
+        // can never carry a keyId (RemoteRegistry::findByKeyId yields nothing → community).
+        if (is_array($artifact)) {
+            if (isset($artifact['keyId']) && $artifact['keyId'] !== null && $artifact['keyId'] !== '') {
+                $errors[] = "declarative manifests must not declare artifact.keyId (add a 'provider' to sign)";
+            }
+            if (isset($artifact['signature']) && $artifact['signature'] !== null && $artifact['signature'] !== '') {
+                $errors[] = "declarative manifests must not declare artifact.signature (add a 'provider' to sign)";
+            }
+        }
+
+        // no signature required. Verify digest if artifact is present locally.
         if (!$errors && is_array($artifact) && isset($artifact['digest'])) {
             $zip = locate_artifact($artifactDir, $artifact['url'] ?? '');
             if ($zip !== null) {

@@ -1,0 +1,14 @@
+{
+    "slug": "declarative-with-keyid",
+    "name": "Fixture",
+    "version": "1.0.0",
+    "uiMode": "declarative",
+    "engines": {
+        "vctrbase": ">=1.0.0"
+    },
+    "artifact": {
+        "url": "https://example.com/artifacts/declarative-with-keyid.zip",
+        "digest": "2f2f63d2fd8666fea2c584b593e2d1a38bbc1ac71f40f8e1a9a321e6ccf489c0",
+        "keyId": "vctrs-ed25519-2026"
+    }
+}
