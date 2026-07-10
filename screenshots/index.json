@@ -1,0 +1,59 @@
+{
+  "arena": [
+    "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/screenshots/arena/01-arena.png"
+  ],
+  "channels": [
+    "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/screenshots/channels/01-channels.png"
+  ],
+  "context-hub": [
+    "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/screenshots/context-hub/01-context.png"
+  ],
+  "feed": [
+    "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/screenshots/feed/01-feed.png"
+  ],
+  "gamification": [
+    "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/screenshots/gamification/01-gamification.png"
+  ],
+  "google-business-profile": [
+    "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/screenshots/google-business-profile/01-google-business-profile.png"
+  ],
+  "hrizn": [
+    "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/screenshots/hrizn/01-hrizn.png"
+  ],
+  "inventory-hub": [
+    "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/screenshots/inventory-hub/01-inventory.png"
+  ],
+  "loaner-fleet": [
+    "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/screenshots/loaner-fleet/01-loaner.png"
+  ],
+  "looker-studio": [
+    "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/screenshots/looker-studio/01-looker-studio.png"
+  ],
+  "oem-cert": [
+    "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/screenshots/oem-cert/01-certifications.png"
+  ],
+  "spreadsheets": [
+    "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/screenshots/spreadsheets/01-spreadsheets.png"
+  ],
+  "staff-hub": [
+    "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/screenshots/staff-hub/01-staff.png"
+  ],
+  "tasks": [
+    "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/screenshots/tasks/01-tasks.png"
+  ],
+  "timeline": [
+    "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/screenshots/timeline/01-timeline.png"
+  ],
+  "training": [
+    "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/screenshots/training/01-training.png"
+  ],
+  "vault": [
+    "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/screenshots/vault/01-vault.png"
+  ],
+  "vendor-manager": [
+    "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/screenshots/vendor-manager/01-vendor.png"
+  ],
+  "warranty-recall": [
+    "https://raw.githubusercontent.com/VCTRSio/marketplace-repository/main/screenshots/warranty-recall/01-recall.png"
+  ]
+}
