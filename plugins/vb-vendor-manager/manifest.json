@@ -7,15 +7,15 @@
   "category": "operations",
   "visibility": "first_party",
   "engines": { "vctrbase": "^1.0.0" },
-  "provider": "Vctrs\\Plugins\\VendorManager\\VendorManagerServiceProvider",
+  "provider": "Vctrs\\Plugins\\VbVendorManager\\VendorManagerServiceProvider",
   "links": {
     "repository": "https://github.com/VCTRSio/vb-vendor-manager",
     "homepage": "https://vctrs.io"
   },
   "artifact": {
     "url": "https://github.com/VCTRSio/vb-vendor-manager/releases/download/v1.0.0/vb-vendor-manager-1.0.0.zip",
-    "digest": "52c20374968999b4849bba705b88f4eaaae206f63f4c3898f93e72f5a2568c9c",
-    "signature": "yahUzEuwOedB8obwg4Jx9GdVfwAtVjxMcaHQ7uIVliRXJqLn5ddvwPXVJ3Dcbv/nuFlGeeJGVORaJZCdclQ2AA==",
+    "digest": "9d7e4b534e65498cc980b0ec0ac37826f776da03c0cdfc45636b619032715ea5",
+    "signature": "BQWpT7lV6b/injlZUvmtOt/cmcTm/Sg2/5PJPWmevfquekLCFAgb5qEfzGfYFlGbvjjjyp4NhBW608b12thvDw==",
     "keyId": "vctrs-ed25519-2026"
   }
 }
