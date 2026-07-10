@@ -1,0 +1,13 @@
+{
+  "name": "marketplace-repository-tools",
+  "private": true,
+  "type": "module",
+  "description": "Dev/maintenance tooling for the VCTRbase marketplace repository (screenshot capture). Not part of the served data.",
+  "scripts": {
+    "screenshots": "node plugin-screenshots.mjs",
+    "test": "node --test \"__tests__/*.test.mjs\""
+  },
+  "devDependencies": {
+    "playwright": "^1.61.1"
+  }
+}
