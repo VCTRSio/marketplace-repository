@@ -1,1 +1,1 @@
-{ "version": 1, "plugins": [] }
+{ "version": 1, "plugins": [{ "slug": "vb-vendor-manager", "featured": false, "order": 1 }] }
