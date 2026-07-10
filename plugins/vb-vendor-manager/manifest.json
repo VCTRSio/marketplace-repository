@@ -1,7 +1,7 @@
 {
   "slug": "vb-vendor-manager",
   "name": "Vendor Manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vendor directory, onboarding, documents, credentials, and compliance settings.",
   "author": "Carmelo Santana",
   "category": "operations",
@@ -13,9 +13,9 @@
     "homepage": "https://vctrs.io"
   },
   "artifact": {
-    "url": "https://github.com/VCTRSio/vb-vendor-manager/releases/download/v1.0.0/vb-vendor-manager-1.0.0.zip",
-    "digest": "f1514be0477538de016ad4688b14d022855ee82fe697016983356cb8c4b1749d",
-    "signature": "kjVK1ujEn49QsNJ6RWOfr3xMvv48hY1WrYH9rzTY974nFqvy5MeYYxt2VCHseAOpzk6m9jVYHtn2ozdF6UM3CA==",
+    "url": "https://github.com/VCTRSio/vb-vendor-manager/releases/download/v1.0.1/vb-vendor-manager-1.0.1.zip",
+    "digest": "8469be531fb21932e121433430391019f7f9c75931f573def642715ee1e9c6e9",
+    "signature": "88K6F+pUEMZbnh9xVViCnmcmRPrtrkRj+kw2/H+8J46GOlAQemN4ehXb9IiTfrB8C4CaK9agY8fa+fH7w77uCw==",
     "keyId": "vctrs-ed25519-2026"
   }
 }
