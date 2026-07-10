@@ -14,8 +14,8 @@
   },
   "artifact": {
     "url": "https://github.com/VCTRSio/vb-vendor-manager/releases/download/v1.0.0/vb-vendor-manager-1.0.0.zip",
-    "digest": "9d7e4b534e65498cc980b0ec0ac37826f776da03c0cdfc45636b619032715ea5",
-    "signature": "BQWpT7lV6b/injlZUvmtOt/cmcTm/Sg2/5PJPWmevfquekLCFAgb5qEfzGfYFlGbvjjjyp4NhBW608b12thvDw==",
+    "digest": "f1514be0477538de016ad4688b14d022855ee82fe697016983356cb8c4b1749d",
+    "signature": "kjVK1ujEn49QsNJ6RWOfr3xMvv48hY1WrYH9rzTY974nFqvy5MeYYxt2VCHseAOpzk6m9jVYHtn2ozdF6UM3CA==",
     "keyId": "vctrs-ed25519-2026"
   }
 }
