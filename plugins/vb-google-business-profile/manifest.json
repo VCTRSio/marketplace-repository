@@ -1,0 +1,21 @@
+{
+  "slug": "vb-google-business-profile",
+  "name": "Google Business Profile",
+  "version": "1.0.0",
+  "description": "Connect rooftops to Google Business Profile: mirror locations, read and reply to reviews, and track local search performance.",
+  "author": "Carmelo Santana",
+  "category": "integrations",
+  "visibility": "first_party",
+  "engines": { "vctrbase": "^1.0.0" },
+  "provider": "Vctrs\\Plugins\\VbGoogleBusinessProfile\\GoogleBusinessProfileServiceProvider",
+  "links": {
+    "repository": "https://github.com/VCTRSio/vb-google-business-profile",
+    "homepage": "https://vctrs.io"
+  },
+  "artifact": {
+    "url": "https://github.com/VCTRSio/vb-google-business-profile/releases/download/v1.0.0/vb-google-business-profile-1.0.0.zip",
+    "digest": "bc2c32820ef34dff8559796e163ab29479e30c170914e61ab5718969aa1a482e",
+    "signature": "WJhMzWDXlpRHta5L73V4KYrXpkLI7ozeBCgz87ewZ4dQb2E2t2JvqwtGS1QoCv2zuKv6p5gDq65Vbl2tHlljDQ==",
+    "keyId": "vctrs-ed25519-2026"
+  }
+}
