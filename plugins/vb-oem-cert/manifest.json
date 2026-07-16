@@ -1,0 +1,21 @@
+{
+  "slug": "vb-oem-cert",
+  "name": "OEM Certifications",
+  "version": "1.0.0",
+  "description": "Track staff certifications, expiry dates, and compliance across all OEM brands.",
+  "author": "Carmelo Santana",
+  "category": "operations",
+  "visibility": "first_party",
+  "engines": { "vctrbase": "^1.0.0" },
+  "provider": "Vctrs\\Plugins\\VbOemCert\\OemCertServiceProvider",
+  "links": {
+    "repository": "https://github.com/VCTRSio/vb-oem-cert",
+    "homepage": "https://vctrs.io"
+  },
+  "artifact": {
+    "url": "https://github.com/VCTRSio/vb-oem-cert/releases/download/v1.0.0/vb-oem-cert-1.0.0.zip",
+    "digest": "97d1070cc1bd64079962c21a6cc90e4c860d43bdc8f5dcebe205bb25d885c5ce",
+    "signature": "j4CbpO1ZRAhyh3IrY2MUo5aRWft5otD09gTaAL6VTG9eNXxED99BcoxnhbnxDChls8Dtu0o3jCrYUrf7jGpuAw==",
+    "keyId": "vctrs-ed25519-2026"
+  }
+}

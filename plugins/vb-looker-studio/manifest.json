@@ -1,0 +1,21 @@
+{
+  "slug": "vb-looker-studio",
+  "name": "Looker Studio",
+  "version": "1.0.0",
+  "description": "Embed Looker Studio reports directly in your dashboard.",
+  "author": "Carmelo Santana",
+  "category": "integrations",
+  "visibility": "first_party",
+  "engines": { "vctrbase": "^1.0.0" },
+  "provider": "Vctrs\\Plugins\\VbLookerStudio\\LookerStudioServiceProvider",
+  "links": {
+    "repository": "https://github.com/VCTRSio/vb-looker-studio",
+    "homepage": "https://vctrs.io"
+  },
+  "artifact": {
+    "url": "https://github.com/VCTRSio/vb-looker-studio/releases/download/v1.0.0/vb-looker-studio-1.0.0.zip",
+    "digest": "c3fc556d597b1d9441413f48fc052f2526211f992b23dea4c015d000656309f1",
+    "signature": "mFpWms5CTMzfhM9v1zNrlTkOg4tsYHOfZvDbTDGYwT2+7EwqiUiTcaZqhvX/LK2Zve9y+QUV4AQls68KMNSsBg==",
+    "keyId": "vctrs-ed25519-2026"
+  }
+}
