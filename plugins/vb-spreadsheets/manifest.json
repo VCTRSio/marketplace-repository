@@ -1,0 +1,21 @@
+{
+  "slug": "vb-spreadsheets",
+  "name": "Spreadsheets",
+  "version": "1.0.0",
+  "description": "Connect and view Google Sheets, Microsoft workbooks, and Vault spreadsheet files.",
+  "author": "Carmelo Santana",
+  "category": "integrations",
+  "visibility": "first_party",
+  "engines": { "vctrbase": "^1.0.0" },
+  "provider": "Vctrs\\Plugins\\VbSpreadsheets\\SpreadsheetsServiceProvider",
+  "links": {
+    "repository": "https://github.com/VCTRSio/vb-spreadsheets",
+    "homepage": "https://vctrs.io"
+  },
+  "artifact": {
+    "url": "https://github.com/VCTRSio/vb-spreadsheets/releases/download/v1.0.0/vb-spreadsheets-1.0.0.zip",
+    "digest": "6c7dc8480b9e01bac490f9e4876aeaab46795cf12e5d720e33ae6cc2e4992fb4",
+    "signature": "uLZJzsoNUaM6iZxyMBAk9h1dSPHBykxMOSEeiQHYoxpd3VuwrQt4Q7zNfzG/uSKp/rtrdHQ5kUGnQHRvefbbCQ==",
+    "keyId": "vctrs-ed25519-2026"
+  }
+}
