@@ -14,8 +14,8 @@
   },
   "artifact": {
     "url": "https://github.com/VCTRSio/vb-warranty-recall/releases/download/v1.0.0/vb-warranty-recall-1.0.0.zip",
-    "digest": "bba383bee17ac23548081590401323fcc38e6d81886d5de9f808642043cc0b61",
-    "signature": "AVP8DU42DFsOV23wjgaAljwaLmA0EfR7MmJeEBT3ceSknPLtUsxvVRBcazFXQ90/Vs9gBHzb/6F5+bgynGpCAA==",
+    "digest": "e3adecf84c87d652d037fc44e7784617cb29934c09f9d6a2b306e0a1ffddb965",
+    "signature": "l+ZSjcgU9AK0JtVoDct9XKK7uktxU/BkpEBnPpbzezNyRitIrZfYLqXsFJSovnnDIvDIZQxpxzEx8675XIisBg==",
     "keyId": "vctrs-ed25519-2026"
   }
 }

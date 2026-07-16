@@ -14,8 +14,8 @@
   },
   "artifact": {
     "url": "https://github.com/VCTRSio/vb-loaner-fleet/releases/download/v1.0.0/vb-loaner-fleet-1.0.0.zip",
-    "digest": "42b18c9fc7f8f7f72ad4797692662808477db7e087c4fc639d69b14e74d6eafa",
-    "signature": "MX3U40AAZS58tV5hNo6SMqVKkWoPavWX51FBCu3zaqc6/5uRYCBPGalbYBrUMFtOPmeIhg86ArAD4nLUptVHDg==",
+    "digest": "3864639863dab45e2a125adff76cdd4191c4bfd49d822be29e9053c0fe1d9e08",
+    "signature": "DSZimkwqZtpsxws//CZPWOrhDoHqHzGW4LBBqK1sbVvoXVS5PiVc/+W++QFv4iAmhM1Cq6261txgV3jZJLFtBw==",
     "keyId": "vctrs-ed25519-2026"
   }
 }

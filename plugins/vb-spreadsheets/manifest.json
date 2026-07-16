@@ -14,8 +14,8 @@
   },
   "artifact": {
     "url": "https://github.com/VCTRSio/vb-spreadsheets/releases/download/v1.0.0/vb-spreadsheets-1.0.0.zip",
-    "digest": "7ded60b0bbe7e5619051ff414b2bbec168fce8afeb0f8550fd2fd88d5baf30dd",
-    "signature": "VTGJO4/oFNdGfTo+FE3qU4xXqqtIycUqxZM6NjWkjFEAE2xfGlE5KzLkxuhKAwIhkeV1SeKxVcCUGzvw53U8BQ==",
+    "digest": "6c7dc8480b9e01bac490f9e4876aeaab46795cf12e5d720e33ae6cc2e4992fb4",
+    "signature": "uLZJzsoNUaM6iZxyMBAk9h1dSPHBykxMOSEeiQHYoxpd3VuwrQt4Q7zNfzG/uSKp/rtrdHQ5kUGnQHRvefbbCQ==",
     "keyId": "vctrs-ed25519-2026"
   }
 }

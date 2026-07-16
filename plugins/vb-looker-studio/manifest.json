@@ -14,8 +14,8 @@
   },
   "artifact": {
     "url": "https://github.com/VCTRSio/vb-looker-studio/releases/download/v1.0.0/vb-looker-studio-1.0.0.zip",
-    "digest": "c3fc556d597b1d9441413f48fc052f2526211f992b23dea4c015d000656309f1",
-    "signature": "mFpWms5CTMzfhM9v1zNrlTkOg4tsYHOfZvDbTDGYwT2+7EwqiUiTcaZqhvX/LK2Zve9y+QUV4AQls68KMNSsBg==",
+    "digest": "6add3247f7872c1f574cf2a09ac0cb250f43579c586992781fd28f609891b85a",
+    "signature": "WuBVxXOtlAUtz6nDGEJmlO8sOFqOSUf8aIcsWIVGJTbOzK4Vthm5AuHMwDRZLvpLEsNIX7HJlAXNAhIyzAPxDA==",
     "keyId": "vctrs-ed25519-2026"
   }
 }
