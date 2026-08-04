@@ -3,7 +3,7 @@
   "name": "Recall & Warranty Intelligence",
   "version": "1.0.0",
   "description": "Track open recalls, manage campaigns and outreach, and monitor warranty claims across the fleet.",
-  "author": "Carmelo Santana",
+  "author": "Angus Fox",
   "category": "operations",
   "visibility": "first_party",
   "engines": { "vctrbase": "^1.0.0" },

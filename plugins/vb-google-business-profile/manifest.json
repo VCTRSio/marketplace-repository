@@ -3,7 +3,7 @@
   "name": "Google Business Profile",
   "version": "1.0.0",
   "description": "Connect rooftops to Google Business Profile: mirror locations, read and reply to reviews, and track local search performance.",
-  "author": "Carmelo Santana",
+  "author": "Angus Fox",
   "category": "integrations",
   "visibility": "first_party",
   "engines": { "vctrbase": "^1.0.0" },

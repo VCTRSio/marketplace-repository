@@ -3,7 +3,7 @@
   "name": "Vendor Manager",
   "version": "1.0.2",
   "description": "Vendor directory, onboarding, documents, credentials, and compliance settings.",
-  "author": "Carmelo Santana",
+  "author": "Angus Fox",
   "category": "operations",
   "visibility": "first_party",
   "engines": { "vctrbase": "^1.0.0" },

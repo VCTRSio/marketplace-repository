@@ -3,7 +3,7 @@
   "name": "OEM Certifications",
   "version": "1.0.0",
   "description": "Track staff certifications, expiry dates, and compliance across all OEM brands.",
-  "author": "Carmelo Santana",
+  "author": "Angus Fox",
   "category": "operations",
   "visibility": "first_party",
   "engines": { "vctrbase": "^1.0.0" },

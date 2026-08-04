@@ -3,7 +3,7 @@
   "name": "Spreadsheets",
   "version": "1.0.0",
   "description": "Connect and view Google Sheets, Microsoft workbooks, and Vault spreadsheet files.",
-  "author": "Carmelo Santana",
+  "author": "Angus Fox",
   "category": "integrations",
   "visibility": "first_party",
   "engines": { "vctrbase": "^1.0.0" },

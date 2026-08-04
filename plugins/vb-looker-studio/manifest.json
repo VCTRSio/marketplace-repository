@@ -3,7 +3,7 @@
   "name": "Looker Studio",
   "version": "1.0.0",
   "description": "Embed Looker Studio reports directly in your dashboard.",
-  "author": "Carmelo Santana",
+  "author": "Angus Fox",
   "category": "integrations",
   "visibility": "first_party",
   "engines": { "vctrbase": "^1.0.0" },

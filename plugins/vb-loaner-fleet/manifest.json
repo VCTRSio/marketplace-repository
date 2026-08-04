@@ -3,7 +3,7 @@
   "name": "Loaner Fleet",
   "version": "1.0.0",
   "description": "Service loaner and courtesy vehicle fleet: checkouts, plates, compliance, and costs.",
-  "author": "Carmelo Santana",
+  "author": "Angus Fox",
   "category": "operations",
   "visibility": "first_party",
   "engines": { "vctrbase": "^1.0.0" },
