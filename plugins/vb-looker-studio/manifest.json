@@ -1,7 +1,7 @@
 {
   "slug": "vb-looker-studio",
   "name": "Looker Studio",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Embed Looker Studio reports directly in your dashboard.",
   "author": "Angus Fox",
   "category": "integrations",
@@ -15,9 +15,9 @@
     "homepage": "https://vctrs.io"
   },
   "artifact": {
-    "url": "https://github.com/VCTRSio/vb-looker-studio/releases/download/v1.1.0/vb-looker-studio-1.1.0.zip",
-    "digest": "1cfe769495a70033ac20339e0c89e74ea7c6d428cd65850336c975102132db6a",
-    "signature": "7jbVGzK5e/WIOucexM/q4cObY3dPtd6rralZx4/XbpDAvadG9Kg6OJ3bTwqix8U7OGHPvUqIUh/mNoln4ux+Cw==",
+    "url": "https://github.com/VCTRSio/vb-looker-studio/releases/download/v1.1.1/vb-looker-studio-1.1.1.zip",
+    "digest": "7747852c2aee9001bdb2124784ad062cadd0dc560071220f3819ef7789be218b",
+    "signature": "gQENN2hjnMysQ8clnFaaN/6JfkjcCjgPS8ykJ20sIMf9lyzz2rS580aPQPboiTdEAXD2kyfGWJZ6LBn7xSy1Dg==",
     "keyId": "angusfox-ed25519-2026"
   }
 }

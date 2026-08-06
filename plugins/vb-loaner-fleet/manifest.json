@@ -1,7 +1,7 @@
 {
   "slug": "vb-loaner-fleet",
   "name": "Loaner Fleet",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Service loaner and courtesy vehicle fleet: checkouts, plates, compliance, and costs.",
   "author": "Angus Fox",
   "category": "operations",
@@ -15,9 +15,9 @@
     "homepage": "https://vctrs.io"
   },
   "artifact": {
-    "url": "https://github.com/VCTRSio/vb-loaner-fleet/releases/download/v1.1.0/vb-loaner-fleet-1.1.0.zip",
-    "digest": "958411c05cd5ad7751ef6a5ef4588f0da32dfdd2e59698a9ef83db4b5cf67831",
-    "signature": "QEbhmkqAEc+s/2VatxIrY9jCuYdEuvR1RoDqV3Bupk9qPpXc2hrIAhXTN01TkVKGcaMIGBQZHkFn0C6b7CWLCA==",
+    "url": "https://github.com/VCTRSio/vb-loaner-fleet/releases/download/v1.1.1/vb-loaner-fleet-1.1.1.zip",
+    "digest": "c338f9742da76c5e8876e792007a581a4bebd7eeba1a94b3a4a228dae331fd05",
+    "signature": "0H2wNpYBxB3mi87gRSmnX8Zz5cWGDdy0Fq8hVQhV3Iab3Fmu+fF6YH4UYKFodfM02u7a04DpfS8MYbBoOvkwCA==",
     "keyId": "angusfox-ed25519-2026"
   }
 }
