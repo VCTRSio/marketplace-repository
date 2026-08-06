@@ -1,21 +1,23 @@
 {
   "slug": "vb-warranty-recall",
   "name": "Recall & Warranty Intelligence",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Track open recalls, manage campaigns and outreach, and monitor warranty claims across the fleet.",
   "author": "Angus Fox",
   "category": "operations",
   "visibility": "first_party",
-  "engines": { "vctrbase": "^1.0.0" },
+  "engines": {
+    "vctrbase": "^1.0.0"
+  },
   "provider": "Vctrs\\Plugins\\VbWarrantyRecall\\WarrantyRecallServiceProvider",
   "links": {
     "repository": "https://github.com/VCTRSio/vb-warranty-recall",
     "homepage": "https://vctrs.io"
   },
   "artifact": {
-    "url": "https://github.com/VCTRSio/vb-warranty-recall/releases/download/v1.0.0/vb-warranty-recall-1.0.0.zip",
-    "digest": "e3adecf84c87d652d037fc44e7784617cb29934c09f9d6a2b306e0a1ffddb965",
-    "signature": "l+ZSjcgU9AK0JtVoDct9XKK7uktxU/BkpEBnPpbzezNyRitIrZfYLqXsFJSovnnDIvDIZQxpxzEx8675XIisBg==",
-    "keyId": "vctrs-ed25519-2026"
+    "url": "https://github.com/VCTRSio/vb-warranty-recall/releases/download/v1.1.0/vb-warranty-recall-1.1.0.zip",
+    "digest": "901ed16c16bff067c84cb57d40efa7e1c0eece954c2c2be259a04390032d4188",
+    "signature": "PbyBUyI2UXfJCKHTGuxPnZsIYtt3Ux4tdKvEwOTR7ncYAwlnYFGUy28p8KMy9Fuy7zm+b7RXbxt94/WInylpDA==",
+    "keyId": "angusfox-ed25519-2026"
   }
 }
