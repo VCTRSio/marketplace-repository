@@ -1,7 +1,7 @@
 {
   "slug": "vb-google-business-profile",
   "name": "Google Business Profile",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Connect rooftops to Google Business Profile: mirror locations, read and reply to reviews, and track local search performance.",
   "author": "Angus Fox",
   "category": "integrations",
@@ -15,9 +15,9 @@
     "homepage": "https://vctrs.io"
   },
   "artifact": {
-    "url": "https://github.com/VCTRSio/vb-google-business-profile/releases/download/v1.1.1/vb-google-business-profile-1.1.1.zip",
-    "digest": "6cda4659f38e19819648cc807f56abca2d995313c0a4f6a8a6ff2631d27d745e",
-    "signature": "dfcyGc3I5+5D3ztAJGZj+yZmlwQoqRxCf0HwqZKnoqrRGG1ZBJ+HqwtlWAOHyk0DxzDudPPo6li7N64Uz1TmCA==",
+    "url": "https://github.com/VCTRSio/vb-google-business-profile/releases/download/v1.2.0/vb-google-business-profile-1.2.0.zip",
+    "digest": "1d90604aa2dd7c140ab1bf283a901e47b32f03746a2595f75e9a5f0e2d7c9a48",
+    "signature": "HUYtYdQv/jEimhc0SScriPQG4VK3q7RslPdCkyZMbPjyG13+fMT8JUfXnwg5Z6utWUNddKPxaQfjSLPYhD70Dg==",
     "keyId": "angusfox-ed25519-2026"
   }
 }
