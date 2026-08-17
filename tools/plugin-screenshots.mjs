@@ -61,6 +61,68 @@ export function screenshotUrl(slug, page, base = SCREENSHOT_BASE_URL) {
 }
 
 /**
+ * Strip a single leading `vb-` publisher prefix so an external (extracted)
+ * plugin's slug lands under the same index key the app-side resolver looks up.
+ * Mirrors App\Plugins\Marketplace\ScreenshotRegistry::normalize exactly, so
+ * `vb-gratitude` → `gratitude`. Un-prefixed slugs (and core plugin dir names,
+ * which are already un-prefixed) pass through unchanged.
+ */
+export function normalizeSlug(slug) {
+    const s = String(slug);
+    return s.startsWith('vb-') ? s.slice(3) : s;
+}
+
+/** Assemble a capture target from a normalized slug + its /dashboard/ nav href. */
+function buildTarget(slug, href) {
+    const page = pageFromHref(href);
+    return {
+        slug,
+        href,
+        page,
+        outFile: join(OUT_DIR, slug, `01-${page}.png`),
+        url: screenshotUrl(slug, page),
+        appUrl: `${BASE_URL}${href}`,
+    };
+}
+
+/**
+ * Build a capture target from an EXTERNAL plugin directory — one containing a
+ * manifest.json that lives OUTSIDE the core plugins/ tree (an extracted
+ * marketplace plugin such as vb-gratitude, which ships from its own repo).
+ *
+ * Two deliberate differences from resolveTargets:
+ *   - it does NOT apply the `enabledByDefault: false` filter. Extracted
+ *     marketplace plugins are opt-in by design and ship that flag false; naming
+ *     one explicitly (via VB_EXTERNAL_PLUGINS) IS the operator opt-in.
+ *   - the slug is normalized (leading `vb-` stripped) so the output folder,
+ *     index key, and served URL match the app-side ScreenshotRegistry lookup.
+ *
+ * The plugin must still be installed AND enabled in the running app for its page
+ * to render — this only tells the capturer WHERE to point the browser.
+ *
+ * @param {string} pluginDir absolute path to a dir containing manifest.json
+ * @returns {{slug:string, href:string, page:string, outFile:string, url:string, appUrl:string}}
+ */
+export function externalTarget(pluginDir) {
+    let manifest;
+    try {
+        manifest = JSON.parse(readFileSync(join(pluginDir, 'manifest.json'), 'utf8'));
+    } catch (e) {
+        throw new Error(`External plugin dir "${pluginDir}" has no readable manifest.json: ${e.message}`);
+    }
+
+    const slug = normalizeSlug(manifest.slug ?? manifest.id ?? '');
+    if (!slug) throw new Error(`External plugin at "${pluginDir}" declares no slug/id`);
+
+    const navEntry = Array.isArray(manifest.nav)
+        ? manifest.nav.find((n) => typeof n?.href === 'string' && n.href.startsWith('/dashboard/'))
+        : undefined;
+    if (!navEntry) throw new Error(`External plugin "${slug}" has no /dashboard/ nav href to capture`);
+
+    return buildTarget(slug, navEntry.href);
+}
+
+/**
  * Resolve the shipping plugin set from the on-disk core manifests.
  *
  * Shipping = a manifest that (a) has a nav[] entry whose href starts with
@@ -93,15 +155,7 @@ export function resolveTargets(pluginsDir) {
             : undefined;
         if (!navEntry) continue;
 
-        const page = pageFromHref(navEntry.href);
-        targets.push({
-            slug,
-            href: navEntry.href,
-            page,
-            outFile: join(OUT_DIR, slug, `01-${page}.png`),
-            url: screenshotUrl(slug, page),
-            appUrl: `${BASE_URL}${navEntry.href}`,
-        });
+        targets.push(buildTarget(slug, navEntry.href));
     }
 
     return targets;
@@ -125,8 +179,25 @@ async function capture(slugFilter) {
     const { chromium } = await import('playwright');
 
     let targets = resolveTargets(PLUGINS_DIR);
+
+    // Append explicitly-listed external plugins — extracted marketplace plugins
+    // that live outside the core plugins/ tree (e.g. vb-gratitude). Comma- or
+    // colon-separated absolute dirs, each containing a manifest.json. These
+    // bypass the enabledByDefault:false filter (naming one IS the opt-in) and are
+    // normalized so their folder/index key match the app-side resolver.
+    const externalDirs = (process.env.VB_EXTERNAL_PLUGINS ?? '')
+        .split(/[,:]/)
+        .map((s) => s.trim())
+        .filter(Boolean);
+    for (const dir of externalDirs) {
+        targets.push(externalTarget(dir));
+    }
+
     if (slugFilter) {
-        targets = targets.filter((t) => t.slug === slugFilter);
+        // Match on the raw filter or its normalized form, so both `vb-gratitude`
+        // and `gratitude` select the external target keyed as `gratitude`.
+        const wanted = normalizeSlug(slugFilter);
+        targets = targets.filter((t) => t.slug === slugFilter || t.slug === wanted);
         if (targets.length === 0) throw new Error(`No shipping plugin matched slug "${slugFilter}"`);
     }
 
