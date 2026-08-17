@@ -48,7 +48,33 @@ drop other slugs).
 **Env overrides:** `BASE_URL` (default `http://127.0.0.1:8080`),
 `VB_EMAIL`/`VB_PASSWORD`, `VB_PLUGINS_DIR` (default `<repo>/../vctrbase-php/plugins`
 — i.e. a core checkout sibling to this repo), `SCREENSHOTS_DIR`,
-`SCREENSHOT_BASE_URL`.
+`SCREENSHOT_BASE_URL`, `VB_EXTERNAL_PLUGINS` (see below).
+
+### External (extracted) plugins
+
+The scan above only sees plugins in the **core** `plugins/` tree, and skips any
+with `enabledByDefault: false`. An **extracted marketplace plugin** — one that ships
+from its own repo, like `vb-gratitude` — is neither: it lives outside core and ships
+`enabledByDefault: false` by design. Point the tool at it explicitly with
+`VB_EXTERNAL_PLUGINS`, a comma- (or colon-) separated list of absolute plugin
+directories, each containing a `manifest.json`:
+
+```bash
+VB_EXTERNAL_PLUGINS=/home/you/Work/VCTRS/vctrbase-plugins/vb-gratitude \
+  VB_EMAIL=you@example.com VB_PASSWORD=… \
+  tools/plugin-screenshots.sh gratitude
+```
+
+Naming a plugin here IS the opt-in, so the `enabledByDefault: false` filter does
+not apply to it. Its slug is **normalized** (a leading `vb-` is stripped, matching
+the app-side `ScreenshotRegistry`), so `vb-gratitude` is written to
+`screenshots/gratitude/01-view.png` and keyed as `gratitude` in `index.json`. The
+optional slug arg accepts either `gratitude` or `vb-gratitude`.
+
+**Prerequisite:** the plugin must be **installed AND enabled in the running app**
+for the target tenant, with enough data that the page isn't a blank hero.
+`VB_EXTERNAL_PLUGINS` only tells the capturer where to point the browser — it does
+not install, enable, or seed anything.
 
 ## Scope of a capture
 

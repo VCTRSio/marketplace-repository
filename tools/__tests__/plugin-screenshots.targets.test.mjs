@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import { mkdtempSync, mkdirSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { pageFromHref, screenshotUrl, resolveTargets } from '../plugin-screenshots.mjs';
+import { pageFromHref, screenshotUrl, resolveTargets, normalizeSlug, externalTarget } from '../plugin-screenshots.mjs';
 
 test('pageFromHref uses the last path segment', () => {
     assert.equal(pageFromHref('/dashboard/gamification'), 'gamification');
@@ -45,4 +45,45 @@ test('resolveTargets keeps dashboard navs, skips opt-outs and no-nav plugins', (
     assert.ok(feed.outFile.endsWith('screenshots/feed/01-feed.png'));
     assert.ok(feed.url.endsWith('/screenshots/feed/01-feed.png'));
     assert.ok(feed.appUrl.endsWith('/dashboard/feed'));
+});
+
+test('normalizeSlug strips one leading vb- (mirrors app-side ScreenshotRegistry)', () => {
+    assert.equal(normalizeSlug('vb-gratitude'), 'gratitude');
+    assert.equal(normalizeSlug('vendor-manager'), 'vendor-manager'); // core dir names pass through
+    assert.equal(normalizeSlug('gratitude'), 'gratitude'); // already normalized
+    assert.equal(normalizeSlug('vb-vb-x'), 'vb-x'); // only ONE prefix stripped
+});
+
+test('externalTarget captures an opt-out marketplace plugin under its normalized slug', () => {
+    const dir = mkdtempSync(join(tmpdir(), 'shots-ext-'));
+    const plugin = join(dir, 'vb-gratitude');
+    mkdirSync(plugin, { recursive: true });
+    writeFileSync(
+        join(plugin, 'manifest.json'),
+        JSON.stringify(
+            {
+                slug: 'vb-gratitude',
+                enabledByDefault: false, // extracted marketplace plugins ship opt-in; NOT filtered here
+                nav: [{ href: '/dashboard/plugins/vb-gratitude/view' }],
+            },
+            null,
+            2
+        ) + '\n'
+    );
+
+    const t = externalTarget(plugin);
+    assert.equal(t.slug, 'gratitude'); // normalized so the app-side resolver matches
+    assert.equal(t.page, 'view'); // last segment of the nav href
+    assert.ok(t.outFile.endsWith('screenshots/gratitude/01-view.png'));
+    assert.ok(t.url.endsWith('/screenshots/gratitude/01-view.png'));
+    assert.ok(t.appUrl.endsWith('/dashboard/plugins/vb-gratitude/view'));
+});
+
+test('externalTarget rejects a plugin with no /dashboard/ nav', () => {
+    const dir = mkdtempSync(join(tmpdir(), 'shots-bad-'));
+    const plugin = join(dir, 'headless');
+    mkdirSync(plugin, { recursive: true });
+    writeFileSync(join(plugin, 'manifest.json'), JSON.stringify({ slug: 'vb-headless', nav: [] }) + '\n');
+
+    assert.throws(() => externalTarget(plugin), /no \/dashboard\/ nav/);
 });
