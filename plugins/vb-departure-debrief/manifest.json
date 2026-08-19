@@ -1,0 +1,23 @@
+{
+    "slug": "vb-departure-debrief",
+    "name": "Departure Debrief",
+    "version": "0.1.0",
+    "description": "A structured, AI-assisted exit interview that captures a departing employee's tribal knowledge before they leave.",
+    "author": "VCTRS",
+    "category": "hr",
+    "visibility": "marketplace",
+    "engines": {
+        "vctrbase": "^1.0.0"
+    },
+    "links": {
+        "repository": "https://github.com/VCTRSio/vb-departure-debrief",
+        "homepage": "https://vctrs.io"
+    },
+    "provider": "Vctrs\\Plugins\\VbDepartureDebrief\\VbDepartureDebriefServiceProvider",
+    "artifact": {
+        "url": "https://github.com/VCTRSio/vb-departure-debrief/releases/download/v0.1.0/vb-departure-debrief-0.1.0.zip",
+        "digest": "166959ef1e7672c22e21d91e708fd70ff86d52f0fd61e563bf5f08cd6b1e7037",
+        "signature": "IxiHO4f+mVNc6nhMTgBmJWGoNTzNF75f10NSNfIFgYMs0JLMyFZR67XJXs5gAgwESXki/yEYEpy44eifyR0BAg==",
+        "keyId": "vctrs-ed25519-2026"
+    }
+}
