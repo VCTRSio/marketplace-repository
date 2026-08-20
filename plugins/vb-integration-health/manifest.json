@@ -1,0 +1,23 @@
+{
+    "slug": "vb-integration-health",
+    "name": "Integration Health",
+    "version": "0.1.0",
+    "description": "Shows whether your vendor data feeds are still running. Every integration that reports in gets a row: when it last ran, whether it succeeded, and when it is next due. A feed that goes quiet past its schedule is flagged and raises a task, so silent breakage surfaces here instead of in a support ticket weeks later. Only integrations that have reported at least once and declared a schedule can be monitored.",
+    "author": "VCTRS",
+    "category": "operations",
+    "visibility": "marketplace",
+    "engines": {
+        "vctrbase": "^1.0.0"
+    },
+    "links": {
+        "repository": "https://github.com/VCTRSio/vb-integration-health",
+        "homepage": "https://vctrs.io"
+    },
+    "provider": "Vctrs\\Plugins\\VbIntegrationHealth\\VbIntegrationHealthServiceProvider",
+    "artifact": {
+        "url": "https://github.com/VCTRSio/vb-integration-health/releases/download/v0.1.0/vb-integration-health-0.1.0.zip",
+        "digest": "0157b4c998ea23003d19fafeb9e25fcfadce3752f2dc53384984a6a89262dab7",
+        "signature": "OTvNFE/q0ormL6EyRuEJI5TuVFcBHRB4AsFiydQGqSJEBCfOF+N4sBVOmIofRvidS5qfVSWAgO5Ek9l5yzX5BQ==",
+        "keyId": "vctrs-ed25519-2026"
+    }
+}
