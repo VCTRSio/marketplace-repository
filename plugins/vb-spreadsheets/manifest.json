@@ -1,23 +1,23 @@
 {
-  "slug": "vb-spreadsheets",
-  "name": "Spreadsheets",
-  "version": "1.1.2",
-  "description": "Connect and view Google Sheets, Microsoft workbooks, and Vault spreadsheet files.",
-  "author": "Angus Fox",
-  "category": "integrations",
-  "visibility": "first_party",
-  "engines": {
-    "vctrbase": "^1.0.0"
-  },
-  "provider": "Vctrs\\Plugins\\VbSpreadsheets\\SpreadsheetsServiceProvider",
-  "links": {
-    "repository": "https://github.com/VCTRSio/vb-spreadsheets",
-    "homepage": "https://vctrs.io"
-  },
-  "artifact": {
-    "url": "https://github.com/VCTRSio/vb-spreadsheets/releases/download/v1.1.2/vb-spreadsheets-1.1.2.zip",
-    "digest": "62e981f14c766e6955c863aa2abb71cb9b7402ab5d4321e6e2d7ddb7540afbff",
-    "signature": "iVvapNckvQ0howljDXohm2ICLXkP0QawmHyELSDJWM+xnocbAGjLjVXjW9og0BmSie+IuEKrm+HupZIAhkPdCQ==",
-    "keyId": "angusfox-ed25519-2026"
-  }
+    "slug": "vb-spreadsheets",
+    "name": "Spreadsheets",
+    "version": "1.1.3",
+    "description": "Connect and view Google Sheets, Microsoft workbooks, and Vault spreadsheet files.",
+    "author": "Angus Fox",
+    "category": "integrations",
+    "visibility": "first_party",
+    "engines": {
+        "vctrbase": "^1.0.0"
+    },
+    "provider": "Vctrs\\Plugins\\VbSpreadsheets\\SpreadsheetsServiceProvider",
+    "links": {
+        "repository": "https://github.com/VCTRSio/vb-spreadsheets",
+        "homepage": "https://vctrs.io"
+    },
+    "artifact": {
+        "url": "https://github.com/VCTRSio/vb-spreadsheets/releases/download/v1.1.3/vb-spreadsheets-1.1.3.zip",
+        "digest": "89f7115506a2d3e4fbe5e2d87fd1a310843c435d704cc3efe21d35d048892f9e",
+        "signature": "J0PS7FwrUW82D9Xe9pl0KlTlvAtG4MP8/QcmZnAjdK3esHLnuzLb+gjS9FvR62Ks3ob/Obbg8GRKsIyvntB3AA==",
+        "keyId": "angusfox-ed25519-2026"
+    }
 }

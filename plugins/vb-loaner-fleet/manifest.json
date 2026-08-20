@@ -1,23 +1,23 @@
 {
-  "slug": "vb-loaner-fleet",
-  "name": "Loaner Fleet",
-  "version": "1.1.2",
-  "description": "Service loaner and courtesy vehicle fleet: checkouts, plates, compliance, and costs.",
-  "author": "Angus Fox",
-  "category": "operations",
-  "visibility": "first_party",
-  "engines": {
-    "vctrbase": "^1.0.0"
-  },
-  "provider": "Vctrs\\Plugins\\VbLoanerFleet\\LoanerFleetServiceProvider",
-  "links": {
-    "repository": "https://github.com/VCTRSio/vb-loaner-fleet",
-    "homepage": "https://vctrs.io"
-  },
-  "artifact": {
-    "url": "https://github.com/VCTRSio/vb-loaner-fleet/releases/download/v1.1.2/vb-loaner-fleet-1.1.2.zip",
-    "digest": "0f1181ad8ebbc6e396e59ae1e06c581b75ae07d99ac3a4be1a55a9c6d9983c44",
-    "signature": "wgYaGXsKkYK1DL+sfjT9KiVH2qb4XrKfdyT7G2murqEaIUIezDI2wgGi3leES4WS7mwMnWNOyEjxeCVQ7SO0CQ==",
-    "keyId": "angusfox-ed25519-2026"
-  }
+    "slug": "vb-loaner-fleet",
+    "name": "Loaner Fleet",
+    "version": "1.1.3",
+    "description": "Service loaner and courtesy vehicle fleet: checkouts, plates, compliance, and costs.",
+    "author": "Angus Fox",
+    "category": "operations",
+    "visibility": "first_party",
+    "engines": {
+        "vctrbase": "^1.0.0"
+    },
+    "provider": "Vctrs\\Plugins\\VbLoanerFleet\\LoanerFleetServiceProvider",
+    "links": {
+        "repository": "https://github.com/VCTRSio/vb-loaner-fleet",
+        "homepage": "https://vctrs.io"
+    },
+    "artifact": {
+        "url": "https://github.com/VCTRSio/vb-loaner-fleet/releases/download/v1.1.3/vb-loaner-fleet-1.1.3.zip",
+        "digest": "042ea9f618689eb6a9add5b22402830f1568c0b74a2c0dc8170a896726a361d8",
+        "signature": "HHUjQERq6v8WGaj4IFxHW/YHSvIZN18r709PzdN1tjOSbOePjdMOa71Azmf3j7zra7TsT3A9g6zObFJKcgCIDw==",
+        "keyId": "angusfox-ed25519-2026"
+    }
 }
