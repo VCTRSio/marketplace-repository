@@ -1,23 +1,23 @@
 {
-  "slug": "vb-oem-cert",
-  "name": "OEM Certifications",
-  "version": "1.1.2",
-  "description": "Track staff certifications, expiry dates, and compliance across all OEM brands.",
-  "author": "Angus Fox",
-  "category": "operations",
-  "visibility": "first_party",
-  "engines": {
-    "vctrbase": "^1.0.0"
-  },
-  "provider": "Vctrs\\Plugins\\VbOemCert\\OemCertServiceProvider",
-  "links": {
-    "repository": "https://github.com/VCTRSio/vb-oem-cert",
-    "homepage": "https://vctrs.io"
-  },
-  "artifact": {
-    "url": "https://github.com/VCTRSio/vb-oem-cert/releases/download/v1.1.2/vb-oem-cert-1.1.2.zip",
-    "digest": "87cc31be00e5c81b55519315de903fc9684789ab9386cced13b98583be3106a1",
-    "signature": "i/v+GeX9fcaLE9bZDWjD9OjqjAnS/JxCMcg5ietA4f9bth+dD9/UZ7AV3Ymrc9aPWcpCUD12yBFDMMTkl/yUBQ==",
-    "keyId": "angusfox-ed25519-2026"
-  }
+    "slug": "vb-oem-cert",
+    "name": "OEM Certifications",
+    "version": "1.1.3",
+    "description": "Track staff certifications, expiry dates, and compliance across all OEM brands.",
+    "author": "Angus Fox",
+    "category": "operations",
+    "visibility": "first_party",
+    "engines": {
+        "vctrbase": "^1.0.0"
+    },
+    "provider": "Vctrs\\Plugins\\VbOemCert\\OemCertServiceProvider",
+    "links": {
+        "repository": "https://github.com/VCTRSio/vb-oem-cert",
+        "homepage": "https://vctrs.io"
+    },
+    "artifact": {
+        "url": "https://github.com/VCTRSio/vb-oem-cert/releases/download/v1.1.3/vb-oem-cert-1.1.3.zip",
+        "digest": "05a9f9e9bcc1d9786f961e21d1ed52441b454a2addc4e8d32db855c8f4491b19",
+        "signature": "fbKuxMOz+sKKNn05snWKguQM5i3uFN+TP7BVFaOQSu5juQ3eb5+edC87aTiFFssip0M/Qfa9zKJ3fx8qspGWAw==",
+        "keyId": "angusfox-ed25519-2026"
+    }
 }

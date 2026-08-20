@@ -1,23 +1,23 @@
 {
-  "slug": "vb-looker-studio",
-  "name": "Looker Studio",
-  "version": "1.1.2",
-  "description": "Embed Looker Studio reports directly in your dashboard.",
-  "author": "Angus Fox",
-  "category": "integrations",
-  "visibility": "first_party",
-  "engines": {
-    "vctrbase": "^1.0.0"
-  },
-  "provider": "Vctrs\\Plugins\\VbLookerStudio\\LookerStudioServiceProvider",
-  "links": {
-    "repository": "https://github.com/VCTRSio/vb-looker-studio",
-    "homepage": "https://vctrs.io"
-  },
-  "artifact": {
-    "url": "https://github.com/VCTRSio/vb-looker-studio/releases/download/v1.1.2/vb-looker-studio-1.1.2.zip",
-    "digest": "4bf65af9ce015b018b8eaabf67065f4cbe35557a1f796ffcd4b355ff28b51ee1",
-    "signature": "2zRlMhBvhuaY4nuWjyidQvS6HBFAWEVq1Tbh4p3JdffLBsZA/fX3PFGcIgn8j/8JeVAuGy6/ExSBnd64dc4eAg==",
-    "keyId": "angusfox-ed25519-2026"
-  }
+    "slug": "vb-looker-studio",
+    "name": "Looker Studio",
+    "version": "1.1.3",
+    "description": "Embed Looker Studio reports directly in your dashboard.",
+    "author": "Angus Fox",
+    "category": "integrations",
+    "visibility": "first_party",
+    "engines": {
+        "vctrbase": "^1.0.0"
+    },
+    "provider": "Vctrs\\Plugins\\VbLookerStudio\\LookerStudioServiceProvider",
+    "links": {
+        "repository": "https://github.com/VCTRSio/vb-looker-studio",
+        "homepage": "https://vctrs.io"
+    },
+    "artifact": {
+        "url": "https://github.com/VCTRSio/vb-looker-studio/releases/download/v1.1.3/vb-looker-studio-1.1.3.zip",
+        "digest": "f77134eebc82dc539feb3a4d73a0e7ea4b6260d97765aee9e082182b3d77cee4",
+        "signature": "dg79XVZHMjIjO+wiD7dV0zvplSdAPFeGdMaPbG08f7mb+ZHdqzswOQEKcXQdHUvTFmWL5wjO7BxSVuabX40uBA==",
+        "keyId": "angusfox-ed25519-2026"
+    }
 }

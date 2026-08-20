@@ -1,23 +1,23 @@
 {
-  "slug": "vb-google-business-profile",
-  "name": "Google Business Profile",
-  "version": "1.2.0",
-  "description": "Connect rooftops to Google Business Profile: mirror locations, read and reply to reviews, and track local search performance.",
-  "author": "Angus Fox",
-  "category": "integrations",
-  "visibility": "first_party",
-  "engines": {
-    "vctrbase": "^1.0.0"
-  },
-  "provider": "Vctrs\\Plugins\\VbGoogleBusinessProfile\\GoogleBusinessProfileServiceProvider",
-  "links": {
-    "repository": "https://github.com/VCTRSio/vb-google-business-profile",
-    "homepage": "https://vctrs.io"
-  },
-  "artifact": {
-    "url": "https://github.com/VCTRSio/vb-google-business-profile/releases/download/v1.2.0/vb-google-business-profile-1.2.0.zip",
-    "digest": "1d90604aa2dd7c140ab1bf283a901e47b32f03746a2595f75e9a5f0e2d7c9a48",
-    "signature": "HUYtYdQv/jEimhc0SScriPQG4VK3q7RslPdCkyZMbPjyG13+fMT8JUfXnwg5Z6utWUNddKPxaQfjSLPYhD70Dg==",
-    "keyId": "angusfox-ed25519-2026"
-  }
+    "slug": "vb-google-business-profile",
+    "name": "Google Business Profile",
+    "version": "1.2.1",
+    "description": "Connect rooftops to Google Business Profile: mirror locations, read and reply to reviews, and track local search performance.",
+    "author": "Angus Fox",
+    "category": "integrations",
+    "visibility": "first_party",
+    "engines": {
+        "vctrbase": "^1.0.0"
+    },
+    "provider": "Vctrs\\Plugins\\VbGoogleBusinessProfile\\GoogleBusinessProfileServiceProvider",
+    "links": {
+        "repository": "https://github.com/VCTRSio/vb-google-business-profile",
+        "homepage": "https://vctrs.io"
+    },
+    "artifact": {
+        "url": "https://github.com/VCTRSio/vb-google-business-profile/releases/download/v1.2.1/vb-google-business-profile-1.2.1.zip",
+        "digest": "48572cc1972783b306f76c0f621c2110352d2b90ae999a1918996921d3cd7c2f",
+        "signature": "NBardtBtBcqLWIOzXWViO8gcRGvRrZ/CbsB5c4lEjF1iNEZYVLC6t7SNaid+qb+TfuQT5rauwc7PiS/upgnjCQ==",
+        "keyId": "angusfox-ed25519-2026"
+    }
 }

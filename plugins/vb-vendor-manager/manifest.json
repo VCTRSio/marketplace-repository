@@ -1,23 +1,23 @@
 {
-  "slug": "vb-vendor-manager",
-  "name": "Vendor Manager",
-  "version": "1.1.2",
-  "description": "Vendor directory, onboarding, documents, credentials, and compliance settings.",
-  "author": "Angus Fox",
-  "category": "operations",
-  "visibility": "first_party",
-  "engines": {
-    "vctrbase": "^1.0.0"
-  },
-  "provider": "Vctrs\\Plugins\\VbVendorManager\\VendorManagerServiceProvider",
-  "links": {
-    "repository": "https://github.com/VCTRSio/vb-vendor-manager",
-    "homepage": "https://vctrs.io"
-  },
-  "artifact": {
-    "url": "https://github.com/VCTRSio/vb-vendor-manager/releases/download/v1.1.2/vb-vendor-manager-1.1.2.zip",
-    "digest": "192cca183a5c8ed477f76ab28ca639bfc0a9a038ef29b94fb2aaae36d97c0908",
-    "signature": "gOqRdRriXWqrCxWp45Z3iQhJ9sj6zI02aKxi7nPSh2EfacBfrdXMqwAAinuy2DMlDidWv+U/kEdnKLpwcS11CA==",
-    "keyId": "angusfox-ed25519-2026"
-  }
+    "slug": "vb-vendor-manager",
+    "name": "Vendor Manager",
+    "version": "1.1.3",
+    "description": "Vendor directory, onboarding workflow, documents, credentials, and compliance settings.",
+    "author": "Angus Fox",
+    "category": "operations",
+    "visibility": "first_party",
+    "engines": {
+        "vctrbase": "^1.0.0"
+    },
+    "provider": "Vctrs\\Plugins\\VbVendorManager\\VendorManagerServiceProvider",
+    "links": {
+        "repository": "https://github.com/VCTRSio/vb-vendor-manager",
+        "homepage": "https://vctrs.io"
+    },
+    "artifact": {
+        "url": "https://github.com/VCTRSio/vb-vendor-manager/releases/download/v1.1.3/vb-vendor-manager-1.1.3.zip",
+        "digest": "a0ac4e0dc2bf9e07970fc2e46c7e625c4cc31ffe93c9877c8a101c8493ea5efe",
+        "signature": "RBKdCuM1t91hHQrr8FMM+ajeOwAWNkyJKbyUscEK/TBPBnPV+NDoJ2+zvGMQzrzuA2MqNhcwGVa4k1yiUZXXBA==",
+        "keyId": "angusfox-ed25519-2026"
+    }
 }
