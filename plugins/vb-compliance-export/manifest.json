@@ -1,7 +1,7 @@
 {
     "slug": "vb-compliance-export",
     "name": "Compliance Export",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Export a scoped, attested change-control evidence package from the platform audit log, organised into FTC Safeguards Rule 314.4 control families, with a declared-coverage section stating what the platform does not log.",
     "author": "VCTRS",
     "category": "compliance",
@@ -15,9 +15,9 @@
     },
     "provider": "Vctrs\\Plugins\\VbComplianceExport\\VbComplianceExportServiceProvider",
     "artifact": {
-        "url": "https://github.com/VCTRSio/vb-compliance-export/releases/download/v0.1.1/vb-compliance-export-0.1.1.zip",
-        "digest": "f667b1829d2a31570cbe492784edd9c26037589d061149a81817b45671061fdf",
-        "signature": "35EiXlPF5QMmnuwH0+ajS85i57SakGHfaPYi3TyRNb3cym5XKPY9jECgR/6j/fDxrNEfxe3AqdulZeqCkRRABg==",
+        "url": "https://github.com/VCTRSio/vb-compliance-export/releases/download/v0.1.2/vb-compliance-export-0.1.2.zip",
+        "digest": "a0d170bd8ee7d96b9a64246568f8be6283b2dc7f18bce2386bb867d8798e64d6",
+        "signature": "f5bNU4HEK3l+bymba4kOF2fUWNtnkoBE86pPqGoymQrWUC5jhGYM0azkya0Tg7WTbRT5+OWeH8RY4/cM+8LPBg==",
         "keyId": "vctrs-ed25519-2026"
     }
 }
