@@ -1,7 +1,7 @@
 {
   "slug": "vb-hrizn",
   "name": "HRIZN",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "AI-powered automotive content generation: keyword IdeaClouds and a generated-content library.",
   "author": "Angus Fox",
   "category": "content",
@@ -15,9 +15,9 @@
     "homepage": "https://vctrs.io"
   },
   "artifact": {
-    "url": "https://github.com/VCTRSio/vb-hrizn/releases/download/v1.2.0/vb-hrizn-1.2.0.zip",
-    "digest": "413e1dd2aa8f3de7d89d740bdfe57513593b9a207fd537d9b89ad85cfa20649e",
-    "signature": "Tc0U/wKdAHszvb7c8gSWY/5q+xJPvXFCzpC4kB97jZ6HAW6Lc/sjUrDDJHc8ijfXGNtJd2wAYfjH8cX/6nSyDA==",
+    "url": "https://github.com/VCTRSio/vb-hrizn/releases/download/v1.2.1/vb-hrizn-1.2.1.zip",
+    "digest": "58fe558a00f637f848c47449771859fe511be6e3577cd80bb4a9142692c0d057",
+    "signature": "7O6iZ/uq201qJkXsMg9bOhM9JExwpQGsHhHqgogbY61qohVZmXTDIwcljzI3sT0Wljd7SQVEd1zx67tuzcByBQ==",
     "keyId": "angusfox-ed25519-2026"
   }
 }
